@@ -1,0 +1,36 @@
+html{
+  /* display: flex; */
+  width: 800px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+  border:1px black;
+}
+.header{
+  justify-content: space-between;
+}
+.container{
+  background-color: #748B75;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.row{
+  background-color:#f5fbef;
+  display: flex;
+}
+.col{
+  background-color: darkred;
+  border: 5px solid black;
+  text-align: center;
+}
+#text{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+#data{
+  text-align: center;
+  border: 5px solid black;
+  background-color: grey;
+}

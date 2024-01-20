@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<!--ctrl+shift+v to preview in vscode-->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Inn Keeper</title>
-    <style>
-      body {background-color: burlywood; color: #D4D4D4;}
-      h1 {color: sandybrown;}
-    </style>
-  </head>
-  <body style="background-color: #252B34; color: #D4D4D4;">
-    <h1 style="color:sandybrown">Welcome to an auto-clicker game!</h1>
 
+<head>
+    <meta charset="utf-8">
+    <title>The Guild</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">The Guild</h1>
+        <div class="row header">
+            <div>Laudation: <span id="laud">2</span></div>
+            <!--
+                <div>Gold: <span id="gold">0</span></div>
+            -->
+        </div>
+        <div class="col">
+          <button id="button1">Display Members</button>
+          <button id="button2">Display Quests</button>
+          <button id="button3">Display Monsters</button>
+          <button id="button4">Assign Quests</button>
+          <button id="button5">Fight Monster</button>
+          <!--
+            <button id="button6">SIXSIXSIX</button>
+          -->
+        </div>
+        <div id="data">
+          <span id="text">Description text.</span>
+        </div>
+        <div class="battlePicture">
+          <span id="monsterPicture">Ascii art goes here</span>
+        </div>
     </div>
-    <p id="expEarned">0 Gold Mined</p>
-    <p id="dwarfNum">Number of Dwarves: 0</p>
-    <button onclick="mineGold()">Mine Gold</button>
-    <button onclick="getDwarf()" id="perDwarfUpgrade">Get a dwarf. Cost: 10 Gold</button>
-    <button onclick="buyGoldPerClick()" id="perClickUpgrade">Upgrade Pickaxe (Currently Level 1) Cost: 10 Gold</button>
-    <script src="main.js" charset="utf-8" type="text/javascript"></script>
-  </body>
+
+    <script src="main.js"></script>
+</body>
+
 </html>
